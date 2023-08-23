@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2021 The ZMK Contributors
+* Copyright (c) 2023 The ZMK Contributors
 *
 * SPDX-License-Identifier: MIT
 */
@@ -76,10 +76,10 @@
 
         MAIN_layer {
             bindings = <
-                            &kp W      &kp E       &kp R        &kp T            &kp Y     &kp U      &kp I           &kp O
-          &kp Q &kp A       &kp S      &kp D       &lt SYM F    &kp G            &kp H     &lt SYM J  &kp K           &kp L        &kp SQT        &kp P
-                &mt LSHFT Z &mt LALT X &mt LCTRL C &mt LGUI V   &kp B            &kp N     &mt RGUI M &mt RCTRL COMMA &mt RALT DOT &mt RSHFT FSLH
-                                                   &lt BT ENTER &lt NAV SPACE    &sk RSHFT
+                &kp Q       &kp W       &kp D       &kp P       &kp F       &kp J       &kp L       &kp O       &kp Y       &kp BSPC
+                &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G       &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL U
+                &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp K       &kp H       &kp COMMA   &kp DOT     &kp ESC
+                                                    &lt 1 TAB       &lt 1 SPACE         &lt 1 RETURN
             >;
         };
 
