@@ -244,6 +244,13 @@
                 , <&macro_release &mo L_FUNC>
                 ;
         )
+
+        m_test: m_test {
+            compatible = "zmk,behavior-macro";
+            label = "M_TEST";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp X>, <&macro_release &kp Y>;
+        };
     };
 
     keymap {
@@ -251,7 +258,7 @@
 
         Layer_ColeMAK {
             bindings = <
-                &td_q       &td_w       &kp D       &kp P       &kp F       &kp J       &kp L       &kp O       &kp Y       &bsdel
+                &td_q       &m_test       &kp D       &kp P       &kp F       &kp J       &kp L       &kp O       &kp Y       &bsdel
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G       &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL U
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp K       &kp H       &td_comma   &td_dot     &bootloader
                                                     &lt_func 0 TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
