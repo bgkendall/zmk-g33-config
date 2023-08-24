@@ -1,0 +1,11 @@
+file_format: "1"
+id: g33
+name: Gherkin+3
+type: shield
+url: https://github.com/bgkendall/zmk-g33-config
+requires:
+  - pro_micro
+features:
+  - keys
+  - encoder
+  - backlight

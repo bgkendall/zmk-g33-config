@@ -1,7 +1,7 @@
 if SHIELD_G33
 
 config ZMK_KEYBOARD_NAME
-    default "Gherkin+3 (Nice)"
+    default "Gherkin+3"
 
 endif
 
