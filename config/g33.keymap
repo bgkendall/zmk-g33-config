@@ -91,14 +91,14 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_PAREN";
             #binding-cells = <0>;
-            bindings = <&td_comma>, <&kp LPAR>;
+            bindings = <&kp COMMA>, <&kp LPAR>;
             mods = <MOD_LSFT>;
         };
         dotrp: dot_paren {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_PAREN";
             #binding-cells = <0>;
-            bindings = <&td_dot>, <&kp RPAR>;
+            bindings = <&kp DOT>, <&kp RPAR>;
             mods = <MOD_LSFT>;
         };
 
@@ -118,13 +118,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COMMA";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&comma_paren>, <&kp SEMI>;
         };
         td_dot: tap_dance_dot {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DOT";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&dot_paren>, <&kp COLON>;
         };
     };
 
