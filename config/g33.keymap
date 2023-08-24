@@ -101,6 +101,20 @@
             bindings = <&kp DOT>, <&kp RPAR>;
             mods = <MOD_LSFT>;
         };
+        comlb: comma_backet {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&comlp>, <&kp LBKT>;
+            mods = <MOD_LCTL>;
+        };
+        dotrb: dot_backet {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&dotrp>, <&kp RBKT>;
+            mods = <MOD_LCTL>;
+        };
 
         td_q: tap_dance_q {
             compatible = "zmk,behavior-tap-dance";
@@ -118,13 +132,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COMMA";
             #binding-cells = <0>;
-            bindings = <&comlp>, <&kp SEMI>;
+            bindings = <&comlb>, <&kp SEMI>;
         };
         td_dot: tap_dance_dot {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DOT";
             #binding-cells = <0>;
-            bindings = <&dotrp>, <&kp COLON>, <&parent_dir>;
+            bindings = <&dotrb>, <&kp COLON>, <&parent_dir>;
         };
     };
 
