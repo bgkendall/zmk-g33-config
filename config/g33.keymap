@@ -105,14 +105,14 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_LESSTHAN";
             #binding-cells = <0>;
-            bindings = <&comlp>, <&kp LPAR>;
+            bindings = <&comlp>, <&kp LT>;
             mods = <MOD_LALT>;
         };
         dotgt: dot_great {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_GREATERTHAN";
             #binding-cells = <0>;
-            bindings = <&dotrp>, <&kp RPAR>;
+            bindings = <&dotrp>, <&kp GT>;
             mods = <MOD_LALT>;
         };
         comlb: comma_backet {
