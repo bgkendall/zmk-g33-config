@@ -166,7 +166,7 @@
             bindings = <
                 &td_q       &td_w       &kp D       &kp P       &kp F       &kp J       &kp L       &kp O       &kp Y       &bsdel
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G       &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL U
-                &mt LSHFT Z &kp X       &kp C       &kp V   &ext_power EP_TOG &kp K       &kp H       &comlp      &dotrp      &bootloader
+                &mt LSHFT Z &kp X       &kp C       &kp V       &kb B       &kp K       &kp H       &comlp      &dotrp      &bootloader
                                                     &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -197,7 +197,7 @@
                 &kp K_WWW   &kp K_WWW   &kp F3      &kp LSQUO   &kp F5      &kp F6      &kp AMPS    &kp ASTRK   &kp S_REDO  &kp F10
                 &kp LDQUO   &kp RDQUO   &kp S_SAVE  &kp RSQUO   &kp AT      &kp MDASH   &kp NDASH   &kp ELLIP   &kp PIPE    &kp CARET
                 &kp S_UNDO  &kp S_CUT   &kp S_COPY  &kp S_PAST  &bgk1       &kp GRAVE   &kp HASH    &kp BSLH    &kp FSLH    &kp CAPS
-                                                    &trans          &trans              &mo 0
+                                                    &trans          &trans              &mo L_META
             >;
             sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
@@ -217,7 +217,7 @@
                 &kp DQT     &kp P7      &kp P8      &kp P9      &kp PMIN    &kp PRCNT   &kp AMPS    &kp PMULT   &kp PDIV    &kp BSPC
                 &kp SQT     &kp P4      &kp P5      &kp P6      &kp PPLUS   &kp LBKT    &kp TILDE   &kp DLLR    &kp PIPE    &tog L_NUML
             &lt L_NUMX PEQL &kp P1      &kp P2      &kp P3      &kp KP_DOT  &kp LT      &kp HASH    &kp QMARK   &kp EXCL    &trans
-                                                    &lt 0 P0        &kp KP_ENTER        &trans
+                                                    &lt L_META P0   &kp KP_ENTER        &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
@@ -227,17 +227,28 @@
                 &kp DQT     &kp P7      &kp P8      &kp P9      &kp PMIN    &kp PRCNT   &kp AMPS    &kp PMULT   &kp PDIV    &kp BSPC
                 &kp SQT     &kp P4      &kp P5      &kp P6      &kp PPLUS   &kp LBKT    &kp TILDE   &kp DLLR    &kp PIPE    &tog L_NUML
             &lt L_NUMX PEQL &kp P1      &kp P2      &kp P3      &kp KP_DOT  &kp LT      &kp HASH    &kp QMARK   &kp EXCL    &trans
-                                                    &lt 0 P0        &kp KP_ENTER        &trans
+                                                    &lt L_META P0   &kp KP_ENTER        &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
-        layer_NUMber_eXtra {
+        Layer_NUMber_eXtra {
             bindings = <
                 &kp KP_NLCK &kp N7      &kp N8      &kp N9      &kp PDIV    &trans      &trans      &trans      &trans      &kp DELETE
                 &kp LG(SQT) &kp N4      &kp N5      &kp N6      &kp PMULT   &kp RBKT    &trans      &trans      &trans      &trans
                 &trans      &kp N1      &kp N2      &kp N3      &kp DOT     &kp GT      &trans      &kp LBRC    &kp RBRC    &trans
-                                                    &lt 0 N0        &trans              &trans
+                                                    &lt L_META N0   &trans              &trans
+            >;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+        };
+
+        Layer_META {
+            bindings = <
+                &kp F1      &kp F2     &kp F3      &kp F4       &kp F5      &kp F6     &kp F7       &kp F8      &kp F9      &bootloader
+                &to CMAK    &to QWER   &kp C_SLEEP &kp C_BRI_UP &kp S_SHOT  &kp K_MUTE &kp C_VOL_UP &kp F10     &kp F11     &kp F12
+                &m1         &m2        &kp S_TIMER &kp C_BRI_DN &none       &kp CAPS   &kp C_VOL_DN &bl BL_DEC  &bl BL_INC  &bl BL_TOG
+                                                    &trans          &bl BL_TOG         &trans
+
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
