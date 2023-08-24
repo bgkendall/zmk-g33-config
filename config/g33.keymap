@@ -11,13 +11,13 @@
 /* Layers */
 #define L_CMAK 0
 #define L_QWER 1
-#define L_FUNC 2
-#define L_NAVI 3
-#define L_NUMB 4
-#define L_NUML 5
-#define L_NUMX 6
-#define L_META 7
-//#define L_FEAX 2
+#define L_FEAX 2
+#define L_FUNC 3
+#define L_NAVI 4
+#define L_NUMB 5
+#define L_NUML 6
+#define L_NUMX 7
+#define L_META 8
 
 /* Option Symbols */
 #define LDQUO   RA(LBKT)
@@ -165,7 +165,7 @@
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp K       &kp H       &comlp      &dotrp      &bootloader
                                                     &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         Layer_QWERty {
@@ -175,7 +175,17 @@
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp ESC
                                                     &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+        };
+
+        layer_Flip_Encoder_AXis {
+            bindings = <
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                                                    &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
+            >;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         Layer_FUNCtion {
@@ -185,17 +195,17 @@
                 &kp S_UNDO  &kp S_CUT   &kp S_COPY  &kp S_PAST  &bgk1       &kp GRAVE   &kp HASH    &kp BSLH    &kp FSLH    &kp CAPS
                                                     &trans          &trans              &mo 0
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         Layer_NAVIgation {
             bindings = <
                 &kp TAB &kp LC(LS(TAB)) &kp UP      &kp LC(TAB) &kp HOME    &kp PG_UP   &kp TILDE   &kp N0      &m000       &kp EQUAL
                 &kp GRAVE   &kp LEFT    &kp DOWN    &kp RIGHT   &kp END     &kp PG_DN   &kp RSHIFT  &kp RGUI    &kp RALT    &kp RCTRL
-               &mt LSHFT N2 &kp N4      &kp M_ALL   &kp INSERT  &kp LBRC    &kp RBRC    &kp FSLH    &none       &none       &to 0
+                &mt LSHFT N2 &kp N4     &kp M_ALL   &kp INSERT  &kp LBRC    &kp RBRC    &kp FSLH    &none       &none       &tog L_FEAX
                                                     &kp LGUI        &trans              &kp RETURN
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         Layer_NUMBer {
@@ -205,7 +215,7 @@
                 &lt 0 PEQL  &kp P1      &kp P2      &kp P3      &kp KP_DOT  &kp LT      &kp HASH    &kp QMARK   &kp EXCL    &trans
                                                     &lt 0 P0        &kp KP_ENTER        &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
     };
 };
