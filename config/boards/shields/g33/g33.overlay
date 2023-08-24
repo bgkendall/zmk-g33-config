@@ -80,10 +80,3 @@
         sensors = <&encoder>;
     };
 };
-
-&pwm0 {
-    pinctrl-0 = <&pwm0_default>;
-    pinctrl-1 = <&pwm0_sleep>;
-    pinctrl-names = "default", "sleep";
-    status = "okay";
-};
