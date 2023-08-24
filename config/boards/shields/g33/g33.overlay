@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/pwm/pwm.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -52,7 +53,7 @@
     backlight: pwmleds {
         compatible = "pwm-leds";
         pwm_led_0 {
-            pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
+            pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_INVERTED>;
         };
     };
 
