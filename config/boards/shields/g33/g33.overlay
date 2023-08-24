@@ -47,4 +47,13 @@
             , <&pro_micro_d  0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    encoder: encoder {
+        compatible = "alps,ec11";
+        label = "Encoder";
+        a-gpios = <&pro_micro_d 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro_d 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+        status = "okay";
+    };
 };

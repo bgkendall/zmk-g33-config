@@ -165,6 +165,7 @@
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp K       &kp H       &comlp      &dotrp      &bootloader
                                                     &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Layer_QWERty {
@@ -174,6 +175,7 @@
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp ESC
                                                     &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Layer_FUNCtion {
@@ -183,6 +185,7 @@
                 &kp S_UNDO  &kp S_CUT   &kp S_COPY  &kp S_PAST  &bgk1       &kp GRAVE   &kp HASH    &kp BSLH    &kp FSLH    &kp CAPS
                                                     &trans          &trans              &mo 0
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Layer_NAVIgation {
@@ -192,6 +195,7 @@
                &mt LSHFT N2 &kp N4      &kp M_ALL   &kp INSERT  &kp LBRC    &kp RBRC    &kp FSLH    &none       &none       &to 0
                                                     &kp LGUI        &trans              &kp RETURN
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Layer_NUMBer {
@@ -201,6 +205,7 @@
                 &lt 0 PEQL  &kp P1      &kp P2      &kp P3      &kp KP_DOT  &kp LT      &kp HASH    &kp QMARK   &kp EXCL    &trans
                                                     &lt 0 P0        &kp KP_ENTER        &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
