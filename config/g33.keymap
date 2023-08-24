@@ -101,18 +101,32 @@
             bindings = <&kp DOT>, <&kp RPAR>;
             mods = <MOD_LSFT>;
         };
+        comlt: comma_less {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_LESSTHAN";
+            #binding-cells = <0>;
+            bindings = <&comlp>, <&kp LPAR>;
+            mods = <MOD_LALT>;
+        };
+        dotgt: dot_great {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_GREATERTHAN";
+            #binding-cells = <0>;
+            bindings = <&dotrp>, <&kp RPAR>;
+            mods = <MOD_LALT>;
+        };
         comlb: comma_backet {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_BRACKET";
             #binding-cells = <0>;
-            bindings = <&comlp>, <&kp LBKT>;
+            bindings = <&comlt>, <&kp LBKT>;
             mods = <MOD_LCTL>;
         };
         dotrb: dot_backet {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_BRACKET";
             #binding-cells = <0>;
-            bindings = <&dotrp>, <&kp RBKT>;
+            bindings = <&dotgt>, <&kp RBKT>;
             mods = <MOD_LCTL>;
         };
 
