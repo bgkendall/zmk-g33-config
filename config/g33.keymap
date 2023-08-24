@@ -42,6 +42,24 @@
 #define S_SHOT  RG(DOLLAR)
 #define S_TIMER RG(RA(RC(F10)))
 
+/* Shorter Number Pad Codes */
+#define P1      KP_NUMBER_1
+#define P2      KP_NUMBER_2
+#define P3      KP_NUMBER_3
+#define P4      KP_NUMBER_4
+#define P5      KP_NUMBER_5
+#define P6      KP_NUMBER_6
+#define P7      KP_NUMBER_7
+#define P8      KP_NUMBER_8
+#define P9      KP_NUMBER_9
+#define P0      KP_NUMBER_0
+#define PPLUS   KP_PLUS
+#define PMIN    KP_MINUS
+#define PMULT   KP_MULTIPLY
+#define PDIV    KP_DIVIDE
+#define PEQL    KP_EQUAL
+#define PDOT    KP_DOT
+
 
 &mt {
     flavor = "balanced";
@@ -143,10 +161,10 @@
 
         Layer_NUMBer {
             bindings = <
-                &kp DQT     &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_MINUS &kp PRCNT   &kp AMPS    &kp PMULT   &kp PDIV    &trans
-                &kp SQT     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS &kp LBKT    &kp TILDE   &kp DLLR    &kp PIPE    &tog L_NUMB
-             &lt 0 KP_EQUAL &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT  &kp LT      &kp HASH    &kp QMARK   &kp EXCL    &trans
-                                                    &lt 0 KP_N0   &kp KP_ENTER        &trans
+                &kp DQT     &kp P7      &kp P8      &kp P9      &kp PMIN    &kp PRCNT   &kp AMPS    &kp PMULT   &kp PDIV    &trans
+                &kp SQT     &kp P4      &kp P5      &kp P6      &kp PPLUS   &kp LBKT    &kp TILDE   &kp DLLR    &kp PIPE    &tog L_NUMB
+                &lt 0 PEQL  &kp P1      &kp P2      &kp P3      &kp KP_DOT  &kp LT      &kp HASH    &kp QMARK   &kp EXCL    &trans
+                                                    &lt 0 P0        &kp KP_ENTER        &trans
             >;
         };
     };
