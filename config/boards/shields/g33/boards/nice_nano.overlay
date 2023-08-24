@@ -81,7 +81,7 @@
         /* Use pin 1.06 (ProMicro B5) as "power" control pin instead of 0.13.
            Instead of switching power, it will switch the key LEDs on/off */
         control-gpios = <&gpio1 6 GPIO_ACTIVE_LOW>;
-    }
+    };
 
     chosen {
         zmk,backlight = &backlight;
