@@ -118,13 +118,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COMMA";
             #binding-cells = <0>;
-            bindings = <&comma_paren>, <&kp SEMI>;
+            bindings = <&comlp>, <&kp SEMI>;
         };
         td_dot: tap_dance_dot {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DOT";
             #binding-cells = <0>;
-            bindings = <&dot_paren>, <&kp COLON>, <&parent_dir>;
+            bindings = <&dotrp>, <&kp COLON>, <&parent_dir>;
         };
     };
 
