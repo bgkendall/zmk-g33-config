@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_W";
             #binding-cells = <0>;
-            bindings = <&kp W>, <&kp DQT>;
+            bindings = <&kp W>, <&kp DQT>, <&www>;
         };
         td_comma: tap_dance_comma {
             compatible = "zmk,behavior-tap-dance";
@@ -124,7 +124,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DOT";
             #binding-cells = <0>;
-            bindings = <&dot_paren>, <&kp COLON>;
+            bindings = <&dot_paren>, <&kp COLON>, <&parent_dir>;
         };
     };
 
@@ -173,6 +173,14 @@
         ZMK_MACRO(
             bgk1,
             bindings = <&kp LS(B) &kp A &kp R &kp N &kp A &kp B &kp Y>;
+        )
+        ZMK_MACRO(
+            www,
+            bindings = <&kp W &kp W &kp W>;
+        )
+        ZMK_MACRO(
+            parent_dir,
+            bindings = <&kp DOT &kp DOT &kp SLASH>;
         )
     };
 
