@@ -10,7 +10,6 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-        zmk,backlight = &backlight;
     };
 
     default_transform: keymap_transform_0 {
@@ -49,22 +48,14 @@
             ;
     };
 
-    // backlight: pwmleds {
-    //     compatible = "pwm-leds";
+    // backlight: gpioleds {
+    //     compatible = "gpio-leds";
     //     label = "Backlight LEDs";
-    //     pwm_led_0 {
-    //         pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+    //     gpio_led_0 {
+    //         gpios = <&pro_micro_d  9 GPIO_ACTIVE_HIGH>;
+    //         label = "Backlight LED 0";
     //     };
     // };
-
-    backlight: gpioleds {
-        compatible = "gpio-leds";
-        label = "Backlight LEDs";
-        gpio_led_0 {
-            gpios = <&pro_micro_d  9 GPIO_ACTIVE_HIGH>;
-            label = "Backlight LED 0";
-        };
-    };
 
     encoder: encoder {
         compatible = "alps,ec11";
