@@ -60,3 +60,9 @@
     pinctrl-names = "default", "sleep";
     status = "okay";
 };
+
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+};
