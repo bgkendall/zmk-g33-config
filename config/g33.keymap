@@ -136,6 +136,25 @@
         };
     };
 
+    macros {
+        ZMK_MACRO(
+            m000,
+            bindings = <&kp P0 &kp P0 &kp P0>;
+        )
+        ZMK_MACRO(
+            m1,
+            bindings = <&kp M &kp N1>;
+        )
+        ZMK_MACRO(
+            m1,
+            bindings = <&kp M &kp N2>;
+        )
+        ZMK_MACRO(
+            bgk1,
+            bindings = <&kp LS(B) &kp A &kp R &kp N &kp A &kp B &kp Y>;
+        )
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -161,14 +180,14 @@
             bindings = <
                 &kp K_WWW   &kp K_WWW   &kp F3      &kp LSQUO   &kp F5      &kp F6      &kp AMPS    &kp ASTRK   &kp S_REDO  &kp F10
                 &kp LDQUO   &kp RDQUO   &kp S_SAVE  &kp RSQUO   &kp AT      &kp MDASH   &kp NDASH   &kp ELLIP   &kp PIPE    &kp CARET
-                &kp S_UNDO  &kp S_CUT   &kp S_COPY  &kp S_PAST  &none       &kp GRAVE   &kp HASH    &kp BSLH    &kp FSLH    &kp CAPS
+                &kp S_UNDO  &kp S_CUT   &kp S_COPY  &kp S_PAST  &bgk1       &kp GRAVE   &kp HASH    &kp BSLH    &kp FSLH    &kp CAPS
                                                     &trans          &trans              &mo 0
             >;
         };
 
         Layer_NAVIgation {
             bindings = <
-                &kp TAB &kp LC(LS(TAB)) &kp UP      &kp LC(TAB) &kp HOME    &kp PG_UP   &kp TILDE   &kp N0      &kp N0      &kp EQUAL
+                &kp TAB &kp LC(LS(TAB)) &kp UP      &kp LC(TAB) &kp HOME    &kp PG_UP   &kp TILDE   &kp N0      &m000       &kp EQUAL
                 &kp GRAVE   &kp LEFT    &kp DOWN    &kp RIGHT   &kp END     &kp PG_DN   &kp RSHIFT  &kp RGUI    &kp RALT    &kp RCTRL
                &mt LSHFT N2 &kp N4      &kp M_ALL   &kp INSERT  &kp LBRC    &kp RBRC    &kp FSLH    &none       &none       &to 0
                                                     &kp LGUI        &trans              &kp RETURN
