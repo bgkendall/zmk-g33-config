@@ -1,5 +1,3 @@
-#include <dt-bindings/pwm/pwm.h>
-
 &pinctrl {
     pwm0_default: pwm0_default {
         group1 {
@@ -13,11 +11,4 @@
             low-power-enable;
         };
     };
-};
-
-&pwm0 {
-    pinctrl-0 = <&pwm0_default>;
-    pinctrl-1 = <&pwm0_sleep>;
-    pinctrl-names = "default", "sleep";
-    status = "okay";
 };
