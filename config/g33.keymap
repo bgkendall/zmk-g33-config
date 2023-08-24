@@ -146,7 +146,7 @@
             bindings = <&kp M &kp N1>;
         )
         ZMK_MACRO(
-            m1,
+            m2,
             bindings = <&kp M &kp N2>;
         )
         ZMK_MACRO(
