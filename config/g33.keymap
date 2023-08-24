@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp RPAR>;
             mods = <MOD_LSFT>;
-        }
+        };
     };
 
     combos {
