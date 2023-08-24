@@ -159,6 +159,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_FUNCTION_LAYER_MACRO";
             #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
             bindings = <&func_layer_macro>, <&kp>;
         };
     };
