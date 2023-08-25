@@ -261,6 +261,11 @@
                 , <&macro_release &kp LEFT_COMMAND>
                 ;
         )
+
+        ZMK_MACRO(
+            m_test3,
+            bindings = <&macro_release &kp LEFT_COMMAND>;
+        )
     };
 
     keymap {
@@ -268,7 +273,7 @@
 
         Layer_ColeMAK {
             bindings = <
-                &td_q       &m_test1       &m_test2       &kp P       &kp F       &kp J       &kp L       &kp O       &kp Y       &bsdel
+                &td_q       &m_test1       &m_test2       &m_test3       &kp F       &kp J       &kp L       &kp O       &kp Y       &bsdel
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G       &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL U
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp K       &kp H       &td_comma   &td_dot     &bootloader
                                                     &lt_func 0 TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
