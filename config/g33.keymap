@@ -154,15 +154,6 @@
             #binding-cells = <0>;
             bindings = <&dotrb>, <&kp COLON>, <&parent_dir>;
         };
-
-        lt_func: lt_func {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_FUNCTION_LAYER_MACRO";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&func_layer_macro>, <&kp>;
-        };
     };
 
     combos {
