@@ -229,7 +229,7 @@
                 &td_q       &td_w       &kp D       &kp P       &kp F       &kp J       &kp L       &kp O       &kp Y       &bsdel
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G       &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL U
                 &mt LSHFT Z &kp X       &kp C       &kp V       &kp B       &kp K       &kp H       &td_comma   &td_dot     &bootloader
-                                                    &lt_func 0 TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
+                                                    &lt L_FUNC TAB  &lt L_NAVI SPACE    &lt L_NUMB RETURN
             >;
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
