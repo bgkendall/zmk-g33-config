@@ -249,8 +249,8 @@
             m_test1,
             bindings
                 = <&macro_press &kp LEFT_COMMAND>
-                , <&macro_tap &kp TAB>
                 , <&macro_wait_time 1000>
+                , <&macro_tap &kp TAB>
                 , <&macro_release &kp LEFT_COMMAND>
                 ;
         )
@@ -266,7 +266,12 @@
 
         ZMK_MACRO(
             m_test3,
-            bindings = <&macro_release &kp LEFT_COMMAND>;
+            bindings
+                = <&macro_tap &kp X>
+                , <&macro_wait_time 1000>
+                , <&macro_tap &kp Y>
+                , <&macro_tap &kp Z>
+                ;
         )
     };
 
